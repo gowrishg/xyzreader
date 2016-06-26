@@ -3,8 +3,7 @@
     android:layout_height="match_parent"
     android:layout_margin="4dp"
     android:clickable="true"
-    android:focusable="true"
-    android:foreground="?selectableItemBackground">
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +17,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:adjustViewBounds="true"
-            android:background="@color/photo_placeholder"
+            android:background="@color/primary_dark"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -32,6 +31,7 @@
             android:paddingRight="16dp"
             android:paddingTop="16dp"
             android:text="HEADING"
+            android:textColor="@color/primary_text"
             android:textStyle="bold" />
 
         <TextView
@@ -41,11 +41,12 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="2"
-            android:paddingTop="4dp"
+            android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:paddingBottom="16dp"
-            android:text="04 Feb, by FOO BAR" />
+            android:paddingTop="4dp"
+            android:text="04 Feb, by FOO BAR"
+            android:textColor="@color/secondary_text" />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>
