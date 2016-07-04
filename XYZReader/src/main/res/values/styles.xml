@@ -18,7 +18,7 @@
 <resources>
 
     <!-- inherit from the material theme -->
-    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.NoActionBar">
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
         <item name="colorPrimary">@color/primary</item>
@@ -32,13 +32,17 @@
         <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
     </style>
 
-    <style name="AppTheme" parent="AppTheme.Base"></style>
+    <style name="AppTheme.List"></style>
+    <style name="AppTheme.Detail"></style>
 
-    <style name="AppTheme.Detail" parent="AppTheme"></style>
+    <style name="CollapsingTextAppearance" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title" />
 
-    <style name="AppTheme.SimpleCoordinatorTheme">
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <style name="CollapsingTextAppearance.Inverse">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
     </style>
 
 </resources>
