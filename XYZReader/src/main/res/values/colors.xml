@@ -28,5 +28,6 @@
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
+    <color name="scrim">#30455A64</color>
 
 </resources>
