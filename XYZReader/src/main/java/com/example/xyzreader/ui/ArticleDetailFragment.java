@@ -61,6 +61,7 @@ public class ArticleDetailFragment extends Fragment implements
     private boolean mIsCard = false;
     private int mStatusBarFullOpacityBottom;
     private FloatingActionButton mFab;
+    Toolbar mToolBar;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -130,10 +131,10 @@ public class ArticleDetailFragment extends Fragment implements
 //            }
 //        });
 
-        Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.article_detail_toolbar);
-        toolbar.setPadding(0, getStatusBarHeight(), 0, 0);
-        toolbar.getLayoutParams().height = toolbar.getLayoutParams().height + getStatusBarHeight();
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        mToolBar = (Toolbar) mRootView.findViewById(R.id.article_detail_toolbar);
+        mToolBar.setPadding(0, getStatusBarHeight(), 0, 0);
+        mToolBar.getLayoutParams().height = mToolBar.getLayoutParams().height + getStatusBarHeight();
+        mToolBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 getActivity().onBackPressed();
             }
@@ -212,7 +213,6 @@ public class ArticleDetailFragment extends Fragment implements
         TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
-        bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
 
         if (mCursor != null) {
             articleDetailsCollapsing.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));

@@ -5,6 +5,7 @@ import android.app.FragmentManager;
 import android.app.LoaderManager;
 import android.content.Loader;
 import android.database.Cursor;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -54,6 +55,11 @@ public class ArticleDetailActivity extends AppCompatActivity
 //                            View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 //        }
         setContentView(R.layout.activity_article_detail);
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "DEFAULT", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "MONOSPACE", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SANS_SERIF", "Rosario-Regular.ttf");
 
         getLoaderManager().initLoader(0, null, this);
 

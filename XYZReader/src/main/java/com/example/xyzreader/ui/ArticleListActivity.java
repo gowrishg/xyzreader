@@ -44,6 +44,11 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "DEFAULT", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "MONOSPACE", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SANS_SERIF", "Rosario-Regular.ttf");
 
 //        CollapsingToolbarLayout collapsingToolbarLayout =
 //                (CollapsingToolbarLayout) findViewById(R.id.main_collapsing);
