@@ -55,11 +55,11 @@ public class ArticleDetailActivity extends AppCompatActivity
 //                            View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 //        }
         setContentView(R.layout.activity_article_detail);
-        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Rosario-Regular.ttf");
-        TypefaceUtil.overrideFont(getApplicationContext(), "DEFAULT", "Rosario-Regular.ttf");
-        TypefaceUtil.overrideFont(getApplicationContext(), "MONOSPACE", "Rosario-Regular.ttf");
-        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Rosario-Regular.ttf");
-        TypefaceUtil.overrideFont(getApplicationContext(), "SANS_SERIF", "Rosario-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Roboto-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "DEFAULT", "Roboto-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "MONOSPACE", "Roboto-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "Roboto-Regular.ttf");
+        TypefaceUtil.overrideFont(getApplicationContext(), "SANS_SERIF", "Roboto-Regular.ttf");
 
         getLoaderManager().initLoader(0, null, this);
 
